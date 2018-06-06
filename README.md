@@ -39,9 +39,9 @@ Simple boilerplate setup for front-end react applications
 
 ### Production
 * Run build script:
-```
-npm run build:prod
-```
+  ```
+  npm run build:prod
+  ```
 * Run script to start up app:  
   ```
   npm start
