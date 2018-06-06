@@ -87,28 +87,22 @@ Simple boilerplate setup for fullstack react/express/node applications
 ziggy-react-app/                           # application root directory
 ├── client/                                # frontend directory
 │    ├── dist/                             # production code directory ignored by .gitignore file
-│    ├── src/                              # development code directory
-│    │    ├── __tests__                    # jest testing directory
-│    │    │    ├── __snapshots__/          # jest snapshots directory (created after running tests)
-│    │    │    └── app.test.js             # initial test file
-│    │    ├── components/                  # react components directory
-│    │    │    ├── App.js                  # initial App.js file
-│    │    │    └── Credit.js               # author information; delete file after opening
-│    │    ├── styles/                      # sass styles directory
-│    │    │    ├── components/             # sass components directory
-│    │    │    │    └── _app.scss          # initial styling for app component
-│    │    │    ├── setup/                  # sass setup directory
-│    │    │    │    ├── _base.scss         # base styling
-│    │    │    │    └── _variables.scss    # sass variables
-│    │    │    └── main.scss               # root sass file (import other files here)
-│    │    ├── index.html                   # template HTML file
-│    │    └── index.js                     # application entry point
-├── server/                                # backend directory
-│    ├── middleware/                       # server middleware directory
-│    │    ├── cors.js                      # CORS middleware
-│    │    ├── index.js                     # middleware configuration file
-│    │    └── session.js                   # express-session middleware
-│    └── server.js                         # express server entry point
+│    └── src/                              # development code directory
+│         ├── __tests__                    # jest testing directory
+│         │    ├── __snapshots__/          # jest snapshots directory (created after running tests)
+│         │    └── app.test.js             # initial test file
+│         ├── components/                  # react components directory
+│         │    ├── App.js                  # initial App.js file
+│         │    └── Credit.js               # author information; delete file after opening
+│         ├── styles/                      # sass styles directory
+│         │    ├── components/             # sass components directory
+│         │    │    └── _app.scss          # initial styling for app component
+│         │    ├── setup/                  # sass setup directory
+│         │    │    ├── _base.scss         # base styling
+│         │    │    └── _variables.scss    # sass variables
+│         │    └── main.scss               # root sass file (import other files here)
+│         ├── index.html                   # template HTML file
+│         └── index.js                     # application entry point
 ├── .babelrc                               # babel configuration file
 ├── .eslintrc.js                           # eslint configuration file
 ├── webpack.common.js                      # base webpack configuration
@@ -120,8 +114,7 @@ ziggy-react-app/                           # application root directory
 | npm <script>   |                     Function/Description                              |
 | -------------- | --------------------------------------------------------------------- |
 | prestart       | Run webpack production build script before express server             |
-| start          | Starts app on express server at `localhost:5000` with node            |
-| serve          | Starts app on express server at `localhost:5000` with nodemon         |
+| start          | Opens production build app from `dist/index.html`                     |
 | test           | Runs all tests files (`.test.js` type)                                |
 | test:verbose   | Displays individuals test results                                     |
 | test:coverage  | Collects test coverage information and reports output                 |
