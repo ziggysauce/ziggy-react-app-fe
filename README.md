@@ -1,5 +1,5 @@
 # Ziggy React App  
-Simple boilerplate setup for fullstack react/express/node applications
+Simple boilerplate setup for front-end react applications
 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/ziggysauce/ziggy-react-app/pulls)
@@ -38,13 +38,10 @@ Simple boilerplate setup for fullstack react/express/node applications
 * In browser, application is served at `http://localhost:8080`
 
 ### Production
-* Add a `.env` file to the root of your directory
-  * Add the following code to your `.env` file:
-    ```
-    PORT=5000
-    SESSION_SECRET=<your_session_secret_here>
-    ```
-  * Add your own `SESSION_SECRET` value
+* Run build script:
+```
+npm run build:prod
+```
 * Run script to start up app:  
   ```
   npm start
@@ -72,13 +69,6 @@ Simple boilerplate setup for fullstack react/express/node applications
     * JS Compression/Minification ([Uglify JS Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin))
 * [Babel](http://babeljs.io/)  
 * [SASS](https://sass-lang.com/)  
-* [Express](https://expressjs.com/)  
-  * Middleware
-    * [Body Parser](https://github.com/expressjs/body-parser)
-    * [Cookie Parser](https://github.com/expressjs/cookie-parser) 
-    * [Helmet](https://github.com/helmetjs/helmet)  
-    * [Express Sessions](https://github.com/expressjs/session)  
-    * [CORS](https://github.com/expressjs/cors)   
 * [Jest](https://facebook.github.io/jest/)  
 * [ESLint](https://eslint.org/) (AirBnB Rules)
 
@@ -130,16 +120,6 @@ ziggy-react-app/                           # application root directory
   * SASS styling:
     * Be sure to add an underscore `_` before new `.scss` files
     * Add new scss files to `main.scss` as an import (order matters)
-* Backend
-  * Add a `.env` file to the root of your directory
-    * Add the following code to your `.env` file:
-      ```
-      PORT=5000
-      SESSION_SECRET=<your_session_secret_here>
-      ```
-    * Add your own `SESSION_SECRET` value
-    * Edit .env variables however you see fit
-    * Removing a variable from here may require changes throughout the app where `process.env` is called
 * Testing
   * Run `npm test` to start all jest testing
   * Run `npm run test:verbose` to see jest testing details
